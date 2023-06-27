@@ -10,4 +10,4 @@ app.add_url_rule(rule='/video_dataset/',endpoint='video_dataset',view_func=views
 app.add_url_rule(rule='/video_feed/',endpoint='video_feed',view_func=views.video_feed)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0")
