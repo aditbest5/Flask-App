@@ -162,10 +162,10 @@ def gen_frames():
                     1,
                     cv2.LINE_AA)
         return img
-    # URL = "http://192.168.51.184"
-    cap = cv2.VideoCapture(0)
+    URL = "http://192.168.232.184"
+    # cap = cv2.VideoCapture(0)
 
-    # cap = cv2.VideoCapture(URL + ":81/stream")
+    cap = cv2.VideoCapture(URL + ":81/stream")
     confidence = 0
     while cap.isOpened():
         ret, frame = cap.read()
